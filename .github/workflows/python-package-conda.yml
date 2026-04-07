@@ -9,13 +9,13 @@ jobs:
       - name: create file
         run: echo "This is Job 1 running" > data.txt
       - name: upload file as artifact
-        run: actions/upload-artifact@v4
+        run: home/runner/work/upload-artifact@v4
 
   job2:
     runs-on: job1
     steps:
       - name: download artifactfile
-        uses: actions/download-artifact@v4
+        uses: home/runner/work/download-artifact@v4
         with:
           name: datafile
       
