@@ -1,5 +1,4 @@
 print("this is an addition function")
-int a , b 
 
 def add(a,b):
     return a + b   
